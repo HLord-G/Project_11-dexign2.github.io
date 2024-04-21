@@ -56,6 +56,24 @@
   border-radius: 8px;
   border: 1px solid ghostwhite;
 }
+.side_info .info_display .information .avatar .tags_display {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+}
+.side_info .info_display .information .avatar .tags_display .tags {
+  text-align: right;
+  font-size: x-small;
+  margin-top: 10px;
+}
+.side_info .info_display .information .avatar .tags_display .tags span {
+  background-color: #555;
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
 .side_info .info_display .information .avatar_name {
   margin-top: 13px;
   line-height: 20px;
@@ -76,6 +94,66 @@
 }
 .side_info .info_display .information .avatar_btn button:hover {
   background-color: rgb(12, 12, 14);
+}
+.side_info .info_display .info_slider {
+  margin-top: 10px;
+  padding: 10px;
+}
+.side_info .info_display .info_slider .header_slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+}
+.side_info .info_display .info_slider .sliders {
+  padding: 10px;
+  border-radius: 5px;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent items from wrapping */
+  margin-top: 10px;
+  /* For WebKit (Chrome, Safari, etc.) */
+}
+.side_info .info_display .info_slider .sliders::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.side_info .info_display .info_slider .sliders .info_items {
+  position: relative;
+  background-color: #0a0a0a;
+  padding: 15px 0px;
+  height: 125px;
+  width: 300px;
+  margin: 4px;
+  word-break: break-all;
+  word-wrap: break-word;
+  display: inline-block; /* Display items in a row */
+  vertical-align: top; /* Align items to the top */
+}
+.side_info .info_display .info_slider .sliders .info_items .paragraph_info {
+  border-left: yellow 3px solid;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: wrap;
+  font-size: smaller;
+}
+.side_info .info_display .info_slider .sliders .btn_areas {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row;
+  gap: 10px;
+}
+.side_info .info_display .info_slider .sliders .btn_areas .smallinfo {
+  padding: 5px 10px;
+  font-size: small;
+  border-radius: 5px;
+  background-color: #333131;
 }
 .side_info .navigation {
   background-color: rgb(0, 0, 0);
