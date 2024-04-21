@@ -122,57 +122,36 @@
 
 
 
+<div class="side_info">
 
-
-
-
-<script>
-
-    
-    for (let index = 0; index < people.length; index++) {
-        $(".display_people").prepend(`
-        <div class="people">
-                    <div class="avater">
-                        <div class="imgs" style="background-image: url('https://source.unsplash.com/40x40/?portrait?${index}');"></div>
-
-                        <div class="tags">${people[index]["tag"]}</div>
-                    </div>
-                    <div class="content">
-                        <h3>${people[index]["fullname"]}</h3>
-                        <small>${people[index]["fullname"]}</small>
-
-                        <div class="email">
-                            <span class="mail">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                                  </svg>
-                                  ${people[index]["email"]}
-                            </span>
-                        </div>
-
-
-                        <div class="progress">
-                            <div class="states">
-                                <small>Today - ${people[index]["status"]}%</small>
-                                <small>${people[index]["task"]} Task</small>
-                            </div>
-                             <div class="prog">
-                                <div class="level" style="width:${people[index]["status"]}%;"></div>
-                             </div>
-                        </div>
-                    </div>
-
-                    <div class="btn_area">
-                        <button>Mesaage</button>
-                        <button>Call</button>
-                        <button>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  width="13" height="13" fill="currentColor"> <path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg>
-                        </button>
-                    </div>
-
+    <div class="info_display">
+        <div class="information">
+            <div class="avatar">
+                <div class="img_ava"></div>
+                <div class="tags_display">
+                    d
                 </div>
-        `)
-    }
+            </div>
+            <div class="avatar_name">
+                <h3>Harold Guzman</h3>
+                <small>Graphic Designer | Web Developer</small>
+            </div>
+            <div class="avatar_btn">
+                <button>Mesaage</button>
+                <button>Call</button>
+                <button>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  width="13" height="13" fill="currentColor"> <path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navigation">
+        sef
+    </div>
+
+</div>
 
 
 
@@ -180,45 +159,7 @@
 
 
 
-    $(document).ready(function() {
-        var itemsPerPage = 10; // Number of items to display initially
-        var itemsToAdd = 5; // Number of items to add each time "Load More" is clicked
-        var totalItems = $('.people').length; // Total number of items
-        var currentIndex = itemsPerPage; // Current index to start loading more items
 
-        // Initially hide all items beyond the first 'itemsPerPage'
-        $('.people').slice(itemsPerPage).hide();
-
-        // Function to load more items
-        $('#loadMoreBtn').on('click', function() {
-            // Show the next 'itemsToAdd' items
-            $('.people').slice(currentIndex, currentIndex + itemsToAdd).slideDown();
-            currentIndex += itemsToAdd;
-
-            // Hide the load more button if all items are displayed
-            if (currentIndex >= totalItems) {
-                $('#loadMoreBtn').hide();
-            }
-        });
-    });
-
-        
-
-
-
-
-
-        $(document).ready(function() {
-        $('#peoplesearch').on('keyup', function() {
-            var searchText = $(this).val().toLowerCase();
-            $('.people').each(function() {
-                var nameText = $(this).find('h3').text().toLowerCase();
-                if (nameText.indexOf(searchText) === -1) {
-                    $(this).hide();
-                } else {
-                    $(this).show();
-                }
-            });
-        });
-    });
-</script>
+<script src="src/script/people_display.js"> </script>
+<script src="src/script/loadmore.js"> </script>
+<script src="src/script/search.js"> </script>

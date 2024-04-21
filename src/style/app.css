@@ -22,6 +22,68 @@
   background: #555; /* color of the scrollbar handle on hover */
 }
 
+.side_info {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+}
+.side_info .info_display {
+  color: ghostwhite;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(16, 16, 17);
+}
+.side_info .info_display .information {
+  padding: 15px;
+  position: relative;
+  background-color: #0a0a0a;
+}
+.side_info .info_display .information .avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+}
+.side_info .info_display .information .avatar .img_ava {
+  height: 75px;
+  width: 75px;
+  border-radius: 8px;
+  border: 1px solid ghostwhite;
+}
+.side_info .info_display .information .avatar_name {
+  margin-top: 13px;
+  line-height: 20px;
+}
+.side_info .info_display .information .avatar_btn {
+  margin: 15px 0px 9px 0px;
+}
+.side_info .info_display .information .avatar_btn button {
+  overflow: hidden;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 6px;
+  outline: 0;
+  font-size: medium;
+  background-color: rgb(26, 26, 29);
+  color: ghostwhite;
+  cursor: pointer;
+}
+.side_info .info_display .information .avatar_btn button:hover {
+  background-color: rgb(12, 12, 14);
+}
+.side_info .navigation {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  height: 100%;
+  color: ghostwhite;
+}
+
 body {
   display: flex;
   justify-content: center;
