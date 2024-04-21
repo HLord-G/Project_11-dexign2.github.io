@@ -1,0 +1,304 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* For WebKit (Chrome, Safari, etc.) */
+&::-webkit-scrollbar {
+    width: 8px; /* width of the scrollbar */
+}
+
+/* Track */
+&::-webkit-scrollbar-track {
+    background: transparent; /* color of the scrollbar track */
+}
+
+/* Handle */
+&::-webkit-scrollbar-thumb {
+    background: yellowgreen; /* color of the scrollbar handle */
+    border-radius: 6px; /* roundness of the scrollbar handle */
+}
+
+/* Handle on hover */
+&::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color of the scrollbar handle on hover */
+}
+
+}
+
+
+
+
+@mixin sideIcon(){
+    aside{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row;
+            background-color: rgb(16, 16, 17);
+
+            border: 1px solid black;
+            padding:10px 15px;
+            height:100%;
+
+        .center_icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+            gap:15px;
+
+            button{
+                color: ghostwhite;
+                outline:0;
+                border:none;
+                background-color: transparent;
+                cursor: pointer;
+                padding:10px;
+                
+
+                &:hover{
+                    background-color: rgba(63, 63, 240, 0.199);
+                    color: rgb(220, 220, 241);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@mixin main(){
+    main{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height:100%;
+        // border: 1px solid ghostwhite;
+
+        .nav{
+                width:100%;
+                color:ghostwhite;
+                padding:20px;
+                font-weight: bold;
+                // border: 1px solid ghostwhite;
+        }
+
+        .display{
+            flex: 1;
+            height:100%;
+            width:100%;
+            color: ghostwhite;
+            padding:20px;
+            overflow: auto;
+            flex-wrap: wrap;
+
+            .search{
+                padding:20px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .searchicon{
+                    color: rgba(248, 248, 255, 0.87);
+                }
+
+                input{
+                    border:none;
+                    outline:0;
+                    padding:5px 10px;
+                    font-size: x-large;
+                    width:100%;
+                    color: ghostwhite;
+                    background-color: transparent;
+                }
+            }
+
+
+            .display_people{
+            
+                margin-top:20px;
+                padding:10px;
+            
+
+                #loadMoreBtn{
+                    width:100%;
+                    margin-top:20px;
+                    padding:10px 15px;
+                    overflow: hidden;
+                    border:none;
+                    border-radius:6px;
+                    outline:0;
+                    font-size: medium;
+                    background-color: rgb(26, 26, 29);
+                    color: ghostwhite;
+                    cursor: pointer;
+                    font-size: larger;
+                    font-weight: bold;
+                }
+
+                
+                .people{
+                    display: inline-block;
+                    margin:15px;
+                    width:260px;
+                    height:250px;
+                    background-color: rgba(14, 14, 22, 0.199);
+                    border: 1px solid rgba(248, 248, 255, 0.336);
+                    border-radius:10px;
+                    overflow: hidden;
+                    padding:15px;
+
+                    .avater{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-flow: row;
+
+                        .imgs{
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width:45px;
+                            height:45px;
+                            border: 1px solid ghostwhite;
+                            border-radius: 5px;
+                        }
+
+                        .tags{
+                            font-size: small;
+                            text-transform: uppercase;
+                        }
+                    }
+
+
+                    .content{
+                        margin-top:15px;
+                        line-height:16px;
+
+                        small{
+                            color: rgba(248, 248, 255, 0.39);
+                        }
+
+
+                        .email{
+                            margin-top:15px;
+                            .mail{
+                                cursor: pointer;
+                                color: rgba(250, 250, 250, 0.952);
+                                transform: .5s;
+                                padding:5px 10px;
+                                background-color: rgb(22, 22, 26);
+                                border-radius: 10px;
+                                font-size: smaller;
+
+                                &:hover{
+                                    color: greenyellow;
+                                }
+
+                                svg{
+                                    padding:0px;
+                                    margin: 0px;
+                                }
+                            }
+                        }
+
+
+                        .progress{
+                            margin-top:20px;
+
+
+                            .states{
+                                width:100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-flow: row;
+                            }
+
+                            .prog{
+                                width:100%;
+                                height:5px;
+                                background-color: rgba(248, 248, 255, 0.123);
+                                border-radius:10px;
+                                margin-top:5px;
+                                overflow: hidden;
+
+                                .level{
+                                    height:100%;
+                                    background-color: greenyellow;
+                                    border-radius:10px;
+                                }
+                            }
+                        }
+                        
+                    }
+
+
+                    .btn_area{
+                        margin-top:20px;
+                        
+                        button{
+                            overflow: hidden;
+                            border:none;
+                            padding:6px 18px;
+                            border-radius:6px;
+                            outline:0;
+                            font-size: medium;
+                            background-color: rgb(26, 26, 29);
+                            color: ghostwhite;
+                            cursor: pointer;
+
+                            &:hover{
+                                background-color: rgb(12, 12, 14);  
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    height:100vh;
+    width:100%;
+    overflow:hidden;
+
+    background-color: rgb(5, 7, 14);
+
+    @include sideIcon();
+    @include main();
+}
+
+
+

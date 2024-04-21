@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="src/lib/jquery/jquery.js"></script>
+    <script src="src/lib/jquery/jq_ui_youch_punch.js"></script>
+    <script src="src/lib/jquery/jui.js"></script>
+
+    
+    <script src="src/script/people.js"></script>
+    <link rel="stylesheet" href="src/style/app.css">
+
+    <title>Dexign 2</title>
+
+</head>
+<body>
+    
+    <aside>
+        <div class="center_icon">
+            
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="16" height="16" fill="currentColor" ><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+            </button>
+
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
+                    <path d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1z"/>
+                  </svg>
+            </button>
+
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  width="16" height="16" fill="currentColor"><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"/></svg>
+            </button>
+
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor"><path d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9c.1-.2 .2-.3 .3-.5z"/></svg>
+            </button>
+
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+            </button>
+
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="16" height="16" fill="currentColor"><path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+            </button>
+
+
+        </div>
+    </aside>
+
+
+    <main>
+        <div class="nav">
+            People
+        </div>
+        <div class="display">
+                
+            <div class="search">
+                <div class="searchicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="16" height="16" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </div>
+                <input type="text" placeholder="Search..." id="peoplesearch">
+            </div>
+        
+            <div class="display_people">
+
+                <div class="people">
+                    <div class="avater">
+                        <div class="imgs"></div>
+
+                        <div class="tags">JS</div>
+                    </div>
+                    <div class="content">
+                        <h3>Harold Guzman</h3>
+                        <small>Creator</small>
+
+                        <div class="email">
+                            <span class="mail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                  </svg>
+                                gzmn.h10195@gmail.com
+                            </span>
+                        </div>
+
+
+                        <div class="progress">
+                            <div class="states">
+                                <small>Today - 95%</small>
+                                <small>2 Task</small>
+                            </div>
+                             <div class="prog">
+                                <div class="level" style="width:95%;"></div>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_area">
+                        <button>Mesaage</button>
+                        <button>Call</button>
+                        <button>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  width="13" height="13" fill="currentColor"> <path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                
+                <button id="loadMoreBtn">Load More</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    
+    for (let index = 0; index < people.length; index++) {
+        $(".display_people").prepend(`
+        <div class="people">
+                    <div class="avater">
+                        <div class="imgs" style="background-image: url('https://source.unsplash.com/40x40/?portrait?${index}');"></div>
+
+                        <div class="tags">${people[index]["tag"]}</div>
+                    </div>
+                    <div class="content">
+                        <h3>${people[index]["fullname"]}</h3>
+                        <small>${people[index]["fullname"]}</small>
+
+                        <div class="email">
+                            <span class="mail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                  </svg>
+                                  ${people[index]["email"]}
+                            </span>
+                        </div>
+
+
+                        <div class="progress">
+                            <div class="states">
+                                <small>Today - ${people[index]["status"]}%</small>
+                                <small>${people[index]["task"]} Task</small>
+                            </div>
+                             <div class="prog">
+                                <div class="level" style="width:${people[index]["status"]}%;"></div>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_area">
+                        <button>Mesaage</button>
+                        <button>Call</button>
+                        <button>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  width="13" height="13" fill="currentColor"> <path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg>
+                        </button>
+                    </div>
+
+                </div>
+        `)
+    }
+
+
+
+
+
+
+
+    $(document).ready(function() {
+        var itemsPerPage = 10; // Number of items to display initially
+        var itemsToAdd = 5; // Number of items to add each time "Load More" is clicked
+        var totalItems = $('.people').length; // Total number of items
+        var currentIndex = itemsPerPage; // Current index to start loading more items
+
+        // Initially hide all items beyond the first 'itemsPerPage'
+        $('.people').slice(itemsPerPage).hide();
+
+        // Function to load more items
+        $('#loadMoreBtn').on('click', function() {
+            // Show the next 'itemsToAdd' items
+            $('.people').slice(currentIndex, currentIndex + itemsToAdd).slideDown();
+            currentIndex += itemsToAdd;
+
+            // Hide the load more button if all items are displayed
+            if (currentIndex >= totalItems) {
+                $('#loadMoreBtn').hide();
+            }
+        });
+    });
+
+        
+
+
+
+
+
+        $(document).ready(function() {
+        $('#peoplesearch').on('keyup', function() {
+            var searchText = $(this).val().toLowerCase();
+            $('.people').each(function() {
+                var nameText = $(this).find('h3').text().toLowerCase();
+                if (nameText.indexOf(searchText) === -1) {
+                    $(this).hide();
+                } else {
+                    $(this).show();
+                }
+            });
+        });
+    });
+</script>

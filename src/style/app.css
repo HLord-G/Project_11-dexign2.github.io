@@ -1,0 +1,220 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* For WebKit (Chrome, Safari, etc.) */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+*::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+*::-webkit-scrollbar-track {
+  background: transparent; /* color of the scrollbar track */
+}
+*::-webkit-scrollbar-thumb {
+  background: yellowgreen; /* color of the scrollbar handle */
+  border-radius: 6px; /* roundness of the scrollbar handle */
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the scrollbar handle on hover */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(5, 7, 14);
+}
+body aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  background-color: rgb(16, 16, 17);
+  border: 1px solid black;
+  padding: 10px 15px;
+  height: 100%;
+}
+body aside .center_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 15px;
+}
+body aside .center_icon button {
+  color: ghostwhite;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+body aside .center_icon button:hover {
+  background-color: rgba(63, 63, 240, 0.199);
+  color: rgb(220, 220, 241);
+  border-radius: 10px;
+}
+body main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+}
+body main .nav {
+  width: 100%;
+  color: ghostwhite;
+  padding: 20px;
+  font-weight: bold;
+}
+body main .display {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  color: ghostwhite;
+  padding: 20px;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+body main .display .search {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main .display .search .searchicon {
+  color: rgba(248, 248, 255, 0.87);
+}
+body main .display .search input {
+  border: none;
+  outline: 0;
+  padding: 5px 10px;
+  font-size: x-large;
+  width: 100%;
+  color: ghostwhite;
+  background-color: transparent;
+}
+body main .display .display_people {
+  margin-top: 20px;
+  padding: 10px;
+}
+body main .display .display_people #loadMoreBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 15px;
+  overflow: hidden;
+  border: none;
+  border-radius: 6px;
+  outline: 0;
+  font-size: medium;
+  background-color: rgb(26, 26, 29);
+  color: ghostwhite;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bold;
+}
+body main .display .display_people .people {
+  display: inline-block;
+  margin: 15px;
+  width: 260px;
+  height: 250px;
+  background-color: rgba(14, 14, 22, 0.199);
+  border: 1px solid rgba(248, 248, 255, 0.336);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+}
+body main .display .display_people .people .avater {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row;
+}
+body main .display .display_people .people .avater .imgs {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 45px;
+  height: 45px;
+  border: 1px solid ghostwhite;
+  border-radius: 5px;
+}
+body main .display .display_people .people .avater .tags {
+  font-size: small;
+  text-transform: uppercase;
+}
+body main .display .display_people .people .content {
+  margin-top: 15px;
+  line-height: 16px;
+}
+body main .display .display_people .people .content small {
+  color: rgba(248, 248, 255, 0.39);
+}
+body main .display .display_people .people .content .email {
+  margin-top: 15px;
+}
+body main .display .display_people .people .content .email .mail {
+  cursor: pointer;
+  color: rgba(250, 250, 250, 0.952);
+  transform: 0.5s;
+  padding: 5px 10px;
+  background-color: rgb(22, 22, 26);
+  border-radius: 10px;
+  font-size: smaller;
+}
+body main .display .display_people .people .content .email .mail:hover {
+  color: greenyellow;
+}
+body main .display .display_people .people .content .email .mail svg {
+  padding: 0px;
+  margin: 0px;
+}
+body main .display .display_people .people .content .progress {
+  margin-top: 20px;
+}
+body main .display .display_people .people .content .progress .states {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+}
+body main .display .display_people .people .content .progress .prog {
+  width: 100%;
+  height: 5px;
+  background-color: rgba(248, 248, 255, 0.123);
+  border-radius: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+body main .display .display_people .people .content .progress .prog .level {
+  height: 100%;
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+body main .display .display_people .people .btn_area {
+  margin-top: 20px;
+}
+body main .display .display_people .people .btn_area button {
+  overflow: hidden;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 6px;
+  outline: 0;
+  font-size: medium;
+  background-color: rgb(26, 26, 29);
+  color: ghostwhite;
+  cursor: pointer;
+}
+body main .display .display_people .people .btn_area button:hover {
+  background-color: rgb(12, 12, 14);
+}/*# sourceMappingURL=app.css.map */
