@@ -38,6 +38,11 @@
   width: 300px;
   height: 100%;
   background-color: rgb(16, 16, 17);
+  overflow: auto;
+  /* For WebKit (Chrome, Safari, etc.) */
+}
+.side_info .info_display::-webkit-scrollbar {
+  width: 3px; /* width of the scrollbar */
 }
 .side_info .info_display .information {
   padding: 15px;
@@ -106,6 +111,10 @@
   flex-flow: row;
   width: 100%;
 }
+.side_info .info_display .info_slider .header_slider a {
+  text-decoration: none;
+  color: ghostwhite;
+}
 .side_info .info_display .info_slider .sliders {
   padding: 10px;
   border-radius: 5px;
@@ -155,11 +164,87 @@
   border-radius: 5px;
   background-color: #333131;
 }
+.side_info .info_display .info_slider .reminder {
+  margin-top: 10px;
+}
+.side_info .info_display .info_slider .reminder .progress_task {
+  height: 25px;
+  width: 100%;
+  margin-top: 6px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #0a0a0a;
+  position: relative;
+}
+.side_info .info_display .info_slider .reminder .progress_task .progs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(85, 85, 85, 0.533);
+  z-index: 9;
+  border-radius: 4px;
+}
+.side_info .info_display .info_slider .reminder .notes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  font-size: small;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 10px;
+  flex-flow: row;
+}
+.side_info .info_display .info_slider .reminder .notes .notes_task {
+  text-align: left;
+  width: 100%;
+}
+.side_info .info_display .info_slider .particip {
+  margin-top: 20px;
+}
+.side_info .info_display .info_slider .particip .parts_display .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+  font-size: smaller;
+  cursor: pointer;
+  padding: 15px 5px;
+  border-bottom: 1px solid rgba(248, 248, 255, 0.411);
+}
 .side_info .navigation {
   background-color: rgb(0, 0, 0);
-  padding: 20px;
+  padding: 10px;
   height: 100%;
   color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.side_info .navigation .center_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 15px;
+}
+.side_info .navigation .center_icon button {
+  color: ghostwhite;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+.side_info .navigation .center_icon button:hover {
+  background-color: rgba(63, 63, 240, 0.199);
+  color: rgb(220, 220, 241);
+  border-radius: 10px;
 }
 
 body {
