@@ -225,6 +225,30 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  position: relative;
+}
+.side_info .navigation .close_this {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.side_info .navigation .close_this button {
+  color: ghostwhite;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+.side_info .navigation .close_this button:hover {
+  background-color: rgba(63, 63, 240, 0.199);
+  color: rgb(220, 220, 241);
+  border-radius: 10px;
 }
 .side_info .navigation .center_icon {
   display: flex;
