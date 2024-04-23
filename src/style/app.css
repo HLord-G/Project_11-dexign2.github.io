@@ -22,6 +22,10 @@
   background: #555; /* color of the scrollbar handle on hover */
 }
 
+body {
+  width: 1311px;
+}
+
 .side_info {
   z-index: 99;
   position: absolute;
